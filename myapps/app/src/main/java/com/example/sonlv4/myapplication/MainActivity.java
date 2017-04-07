@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int add(int a, int b) {
-        return a + b;
+        if (a > b) {
+            return a + b;
+        }
+        return b + a;
     }
 }
